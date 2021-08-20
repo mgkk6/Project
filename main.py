@@ -107,3 +107,8 @@ def check_array_for_mistakes(arr, parametr):
         for value in range(len(checked_arr) - 1, -1, -1):
             checked_arr[value] = int(checked_arr[value])
         print('NumOfElements')
+
+    else:
+        print('Введите слово из списка')
+
+    return checked_arr
