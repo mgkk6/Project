@@ -114,7 +114,7 @@ def check_array_for_mistakes(arr, parametr):
     return checked_arr
 
 
-get_array_of_random_elements(1000, 1)
+get_array_of_random_elements(1000, 2)
 parametr = input('Введите какой величине должен соответсвовать каждый элемент в массиве: ' + ', '.join(ParametrArr)
                  + '\n')
 check_array_for_mistakes(array_of_random_elements, parametr)
