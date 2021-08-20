@@ -112,3 +112,12 @@ def check_array_for_mistakes(arr, parametr):
         print('Введите слово из списка')
 
     return checked_arr
+
+
+get_array_of_random_elements(1000, 1)
+parametr = input('Введите какой величине должен соответсвовать каждый элемент в массиве: ' + ', '.join(ParametrArr)
+                 + '\n')
+check_array_for_mistakes(array_of_random_elements, parametr)
+print('Массив неправильных значений: ' + str(bad_arr))
+print('Массив правильных значений: ' + str(checked_arr))
+# print(valueArr[0].split(' ')[1])
