@@ -89,3 +89,11 @@ def check_array_for_mistakes(arr, parametr):
                 bad_arr.append(checked_arr[value])
                 checked_arr.remove(checked_arr[value])
         print('Length')
+
+        # тоже самое что и предыдущее
+    elif parametr == ParametrArr[2].split(' ')[1] or parametr == '3':
+        for value in range(len(checked_arr) - 1, -1, -1):
+            if checked_arr[value] <= 0:
+                bad_arr.append(checked_arr[value])
+                checked_arr.remove(checked_arr[value])
+        print('Hardness')
