@@ -81,3 +81,11 @@ def check_array_for_mistakes(arr, parametr):
             bad_arr.append(arr[value])
     if parametr == ParametrArr[0].split(' ')[1] or parametr == '1':
         print('Force')
+
+        # делаем массив только из цифр с плавающей запятой и без отрицательных значений
+    elif parametr == ParametrArr[1].split(' ')[1] or parametr == '2':
+        for value in range(len(checked_arr) - 1, -1, -1):
+            if checked_arr[value] <= 0:
+                bad_arr.append(checked_arr[value])
+                checked_arr.remove(checked_arr[value])
+        print('Length')
