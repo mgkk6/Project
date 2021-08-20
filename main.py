@@ -97,3 +97,13 @@ def check_array_for_mistakes(arr, parametr):
                 bad_arr.append(checked_arr[value])
                 checked_arr.remove(checked_arr[value])
         print('Hardness')
+
+        # делаем массив только из целых цифр и без отрицательных значений
+    elif parametr == ParametrArr[3].split(' ')[1] or parametr == '4':
+        for value in range(len(checked_arr) - 1, -1, -1):
+            if str(checked_arr[value]).split('.')[1] != '0':
+                bad_arr.append(checked_arr[value])
+                checked_arr.remove(checked_arr[value])
+        for value in range(len(checked_arr) - 1, -1, -1):
+            checked_arr[value] = int(checked_arr[value])
+        print('NumOfElements')
