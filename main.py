@@ -59,3 +59,23 @@ def get_array_of_random_elements_negative(lengthOfArray, number):
 
 # get_array_of_random_number_elements(10)
 # print(array_of_random_number_elements)
+
+ParametrArr = ['1: Force', '2: Length', '3: Hardness', '4: NumOfElements']
+arr = []
+checked_arr = []
+bad_arr = []
+additionalArr = []
+
+
+# поиск ошибок и возвращение проверенного массива
+def check_array_for_mistakes(arr, parametr):
+    # сгенерированный массив
+    print(arr)
+    # делаем массив только из цифр с плавающей запятой и отрицательными значениями
+    for value in range(len(arr) - 1):
+        if '.' in arr[value] and arr[value].split('.')[0].isdigit() and arr[value].split('.')[1].isdigit() \
+                or arr[value][0] == '-' and '.' in arr[value] and arr[value].split('.')[0].split('-')[1].isdigit() \
+                and arr[value].split('.')[1].isdigit():
+            checked_arr.append(float(arr[value]))
+        else:
+            bad_arr.append(arr[value])
