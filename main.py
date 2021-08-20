@@ -9,4 +9,14 @@ def get_random_number_element(FromNumber=-100, toNumber=100):
 
 
 rounded_number = get_random_number_element()
-print(rounded_number)
+# print(rounded_number)
+
+# массив случайных чисел
+array_of_random_number_elements = []
+
+
+def get_array_of_random_number_elements(lengthOfArray):
+    for i in range(lengthOfArray):
+        random_element = get_random_number_element()
+        array_of_random_number_elements.append(random_element)
+    return array_of_random_number_elements
