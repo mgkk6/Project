@@ -35,7 +35,7 @@ array_of_random_elements = []
 # массив случайных чисел и букв
 def get_array_of_random_elements(lengthOfArray, number):
     for i in range(lengthOfArray):
-        random_element = str(get_random_number_element(- pow(10, round(number / 2)) + 1, pow(10, round(number / 2)) - 1)) \
+        random_element = str(get_random_number_element(- pow(10, round(number / 2)) + 1 , pow(10, round(number / 2)) - 1 )) \
                          + get_random_letter_and_number_element(round(number / 2)) + '.' \
                          + get_random_letter_and_number_element(number)
         array_of_random_elements.append(random_element)
@@ -54,8 +54,8 @@ def get_array_of_random_elements_negative(lengthOfArray, number):
     return array_of_random_elements_negative
 
 
-get_array_of_random_elements(10, 4)
-print(array_of_random_elements)
+#get_array_of_random_elements(10, 4)
+#print(array_of_random_elements)
 
 # get_array_of_random_number_elements(10)
 # print(array_of_random_number_elements)
