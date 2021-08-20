@@ -79,3 +79,5 @@ def check_array_for_mistakes(arr, parametr):
             checked_arr.append(float(arr[value]))
         else:
             bad_arr.append(arr[value])
+    if parametr == ParametrArr[0].split(' ')[1] or parametr == '1':
+        print('Force')
